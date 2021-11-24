@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 
 import * as fromComponents from './components';
+import { CardUserComponent } from './components/cards/card-user/card-user.component';
 
 
 @NgModule({
@@ -13,7 +14,7 @@ import * as fromComponents from './components';
     HttpClientModule,
     CommonModule
   ],
-  declarations: [...fromComponents.component],
+  declarations: [...fromComponents.component, CardUserComponent],
   exports:[
     FormsModule,
     ReactiveFormsModule,

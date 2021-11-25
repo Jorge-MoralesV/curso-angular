@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-title-h1',
@@ -6,11 +6,11 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./title-h1.component.scss']
 })
 export class TitleH1Component implements OnInit {
-  @Input() text = '';
-  @Input() type :  'primary' | 'secondary' | 'succes' | 'danger' | 'warning' | 'dark' = 'primary';
+ @Input() text = '';
+ @Input() type: 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'dark' = 'primary';
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }

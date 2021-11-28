@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import * as fromComponents from './components';
 import { CardUserComponent } from './components/cards/card-user/card-user.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { CardUserComponent } from './components/cards/card-user/card-user.compon
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   declarations: [...fromComponents.components, CardUserComponent],
   exports: [
@@ -20,6 +22,7 @@ import { CardUserComponent } from './components/cards/card-user/card-user.compon
     ReactiveFormsModule,
     HttpClientModule,
     CommonModule,
+    RouterModule,
     ...fromComponents.components
   ]
 })

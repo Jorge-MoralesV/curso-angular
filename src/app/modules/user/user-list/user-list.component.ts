@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { USERS_DATA } from '@data/users.const';
 import { ICardUser } from '@shared/components/cards/card-user/icard-user.metadata';
 
 @Component({
@@ -8,37 +9,7 @@ import { ICardUser } from '@shared/components/cards/card-user/icard-user.metadat
 })
 export class UserListComponent implements OnInit {
 
-  public users: ICardUser[] = [{
-    name: 'Jorge Morales',
-    age: 22,
-    description: 'Desarrollador fullstack',
-    avatar: '../../../assets/img/What-is-an-End.png',
-  },
-  {
-    name: 'Alma Salinas',
-    age: 22,
-    description: 'Desarrollador fullstack',
-    avatar: '../../../assets/img/What-is-an-End.png'
-  },
-  {
-    name: 'Raul Enrique',
-    age: 22,
-    description: 'Desarrollador fullstack',
-    avatar: '../../../assets/img/What-is-an-End.png'
-  },
-  {
-    name: 'Jose Sanchez',
-    age: 22,
-    description: 'Desarrollador fullstack',
-    avatar: '../../../assets/img/What-is-an-End.png'
-  },
-  {
-    name: 'Jesus Saenz',
-    age: 22,
-    description: 'Desarrollador fullstack',
-    avatar: '../../../assets/img/What-is-an-End.png'
-  },
-  ]
+  public users: ICardUser[] = USERS_DATA;
   constructor() { }
 
   ngOnInit() {

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { USERS_DATA } from '@data/users.const';
+import { USERS_DATA } from '@data/constants/users.const';
 import { ICardUser } from '@shared/components/cards/card-user/icard-user.metadata';
 
 @Component({

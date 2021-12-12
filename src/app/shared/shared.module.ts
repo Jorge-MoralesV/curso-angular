@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { CardLoaderComponent } from './components/loaders/card-loader/card-loader.component';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { CardLoaderComponent } from './components/loaders/card-loader/card-loade
     ReactiveFormsModule,
     HttpClientModule,
     CommonModule,
-    RouterModule
+    RouterModule,
+    FontAwesomeModule,
   ],
   declarations: [...fromComponents.components],
   exports: [
@@ -25,6 +27,7 @@ import { CardLoaderComponent } from './components/loaders/card-loader/card-loade
     HttpClientModule,
     CommonModule,
     RouterModule,
+    FontAwesomeModule,
     ...fromComponents.components
   ]
 })

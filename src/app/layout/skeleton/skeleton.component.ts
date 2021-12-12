@@ -5,11 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './skeleton.component.html',
   styleUrls: ['./skeleton.component.scss']
 })
-export class SkeletonComponent implements OnInit {
-
+export class SkeletonComponent {
+public showLeftNav = true;
+public $theme: 'dark' | 'red' | 'blue-dark' | 'yellow' = 'blue-dark'
   constructor() { }
 
-  ngOnInit(): void {
+  showMenu(){
+    this.showLeftNav = !this.showLeftNav;
   }
 
 }
